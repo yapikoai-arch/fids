@@ -1,0 +1,55 @@
+name: Meta feeds
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # 05:00 за Києвом (взимку; влітку буде 06:00)
+  workflow_dispatch:
+    inputs:
+      debug:
+        description: "Зберегти HTML/скріни в debug/"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths: ["build_feeds.py", ".github/workflows/feeds.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: feeds
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Playwright
+        run: |
+          pip install playwright==1.47.0
+          python -m playwright install --with-deps chromium
+      - name: Build feeds
+        id: build
+        continue-on-error: true
+        run: |
+          if [ "${{ github.event_name }}" = "push" ] || [ "${{ inputs.debug }}" = "true" ]; then
+            python build_feeds.py --debug
+          else
+            python build_feeds.py
+          fi
+      - name: Commit feeds
+        run: |
+          git config user.name "meta-feeds-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add feeds
+          [ -d debug ] && git add -f debug || true
+          git diff --cached --quiet || git commit -m "Оновлення фідів $(date -u +%F)"
+          git push
+      - name: Fail if build had errors
+        if: steps.build.outcome == 'failure'
+        run: exit 1
