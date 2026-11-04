@@ -104,23 +104,39 @@ def google_feed(city):
 JS_PRODUCT = r"""
 () => {
   const q = s => document.querySelector(s);
+  const txt = e => e ? e.textContent.replace(/\s+/g, ' ').trim() : '';
   const meta = p => { const m = q(`meta[property="${p}"],meta[name="${p}"]`); return m ? m.content : null; };
-  const box = q('.product-info-main .price-box, .price-box[data-product-id], .price-box');
-  const amt = t => { const e = box && box.querySelector(`[data-price-type="${t}"]`); return e ? e.getAttribute('data-price-amount') : null; };
+  const box = q('.product-info-main .price-box') || q('.price-box[data-product-id]') || q('.price-box');
+  const amt = t => {
+    const e = box && box.querySelector(`[data-price-type="${t}"]`);
+    if (!e) return null;
+    const a = parseFloat(e.getAttribute('data-price-amount') || '0');
+    if (a > 0) return String(a);
+    const m = txt(e).replace(/\s/g, '').match(/\d+(?:[.,]\d+)?/);   // атрибут 0, але ціна є в тексті
+    return m ? m[0].replace(',', '.') : null;
+  };
   const img = q('.fotorama__stage__frame img, .gallery-placeholder img, .product.media img, img.gallery-placeholder__image');
   const info = q('.product-info-main') || document.body;
-  const sku = q('[itemprop="sku"], .product.attribute.sku .value');
+  const descLis = [...document.querySelectorAll('.product.attribute.description .value li')].map(txt).filter(Boolean);
+  const staticOpts = [...document.querySelectorAll('[data-tabs-destination="static"] .name-block')].map(txt).filter(Boolean);
+  const descPs = [...document.querySelectorAll('.product.attribute.description .value p')].map(txt);
+  const pcs = descPs.map(t => t.match(/^(\d+)\s*шт\.?$/)).find(Boolean);
+  const wt = ((info.innerText || '') + ' ' + info.textContent).match(/(\d[\d ]*)\s*г\b/);
+  const wAttr = q('[data-weight-amount]');
+  const html = document.documentElement.innerHTML;
+  const fb = html.match(/"ViewContent"\s*,\s*\{[^}]*content_ids\s*:\s*\[?\s*["']([^"']+)["']/);
   return {
-    title: (q('h1') || {}).innerText || meta('og:title'),
+    h1: txt(q('h1')) || meta('og:title'),
     final: amt('finalPrice') || meta('product:price:amount'),
     old: amt('oldPrice'),
     availability: meta('product:availability'),
-    stockText: (q('.stock') || {}).innerText || '',
+    stockText: txt(q('.product-info-main .stock')),
     productId: box ? box.getAttribute('data-product-id') : null,
-    sku: sku ? sku.innerText.trim() : null,
     image: (img && (img.getAttribute('src') || img.getAttribute('data-src'))) || meta('og:image'),
-    canonical: (q('link[rel="canonical"]') || {}).href || location.href,
-    infoText: info.innerText,
+    composition: descLis.length ? descLis : staticOpts,
+    pieces: pcs ? pcs[1] : null,
+    weight: wAttr ? wAttr.getAttribute('data-weight-amount') : (wt ? wt[1].replace(/ /g, '') : null),
+    pixelId: fb ? fb[1] : null,
     ogDescription: meta('og:description') || meta('description'),
     url: location.href,
   };
@@ -128,27 +144,36 @@ JS_PRODUCT = r"""
 """
 
 
-def extract_description(info_text):
-    """З тексту картки: «32 шт, 1060 г. Склад: …»."""
-    t = info_text or ""
-    pcs = re.search(r"(\d+)\s*шт\.?(?!\))", t)
-    wt = re.search(r"(\d[\d\s]*)\s*г\b", t)
-    lines = [l.strip(" ;•-") for l in t.splitlines()]
-    comp = [l for l in lines if re.search(r"\(\d+\s*шт", l) or l.lower().startswith("склад")]
-    if not comp:
-        m = re.search(r"Склад[:\s]+(.+)", t)
-        comp = [m.group(1)] if m else []
+def build_description(data):
+    """«32 шт, 1060 г. Склад: …» з картки товару."""
     head = []
-    if pcs:
-        head.append(f"{pcs.group(1)} шт")
-    if wt:
-        head.append(f"{wt.group(1).replace(' ', '')} г")
+    comp = [clean(c).rstrip(";.,") for c in data.get("composition") or []]
+    comp = [c for c in comp if c]
+    pieces = data.get("pieces")
+    if not pieces:  # для сетів: сума «(8 шт.)» по ролах
+        n = [int(m) for c in comp for m in re.findall(r"\((\d+)\s*шт", c)]
+        pieces = str(sum(n)) if len(n) > 1 else None
+    if pieces:
+        head.append(f"{pieces} шт")
+    if data.get("weight"):
+        head.append(f"{data['weight']} г")
     out = ", ".join(head)
     if comp:
-        c = clean("; ".join(comp))
-        c = re.sub(r"^склад[:\s]*", "", c, flags=re.I)
-        out += (". " if out else "") + "Склад: " + c
-    return out
+        out += (". " if out else "") + "Склад: " + "; ".join(comp) + "."
+    return out[:5000]
+
+
+def dl_item(data):
+    """Перший товар з події view_item у dataLayer (те, що GTM передає в пікселі)."""
+    try:
+        for ev in json.loads(data.get("dataLayer") or "[]"):
+            if isinstance(ev, dict) and ev.get("event") == "view_item":
+                items = (ev.get("ecommerce") or {}).get("items") or []
+                if items:
+                    return items[0]
+    except (ValueError, TypeError):
+        pass
+    return {}
 
 
 def select_city(page, city, label, dbg):
@@ -220,12 +245,8 @@ def scrape_product(page, url_key, dbg):
 
 
 def pixel_id(data):
-    """content_ids з dataLayer (якщо сайт їх туди кладе), інакше data-product-id."""
-    for pat in (r'"content_ids"\s*:\s*\[\s*"?([^",\]]+)', r'"item_id"\s*:\s*"([^"]+)"', r'"id"\s*:\s*"?(\d+)"?'):
-        m = re.search(pat, data.get("dataLayer") or "")
-        if m:
-            return m.group(1)
-    return data.get("productId") or data.get("sku") or ""
+    """content_ids з fbq ViewContent на сторінці, інакше item_id з dataLayer, інакше data-product-id."""
+    return str(data.get("pixelId") or dl_item(data).get("item_id") or data.get("productId") or "")
 
 
 def to_item(data, url_key, ptype, city, feed, weekly):
@@ -233,12 +254,14 @@ def to_item(data, url_key, ptype, city, feed, weekly):
     old = float(data["old"]) if data.get("old") else 0.0
     price, sale = (old, final) if old > final > 0 else (final, None)
     av = (data.get("availability") or "").lower()
+    if av in ("instock", "available"):
+        av = "in stock"
     if av not in ("in stock", "out of stock"):
         av = "out of stock" if re.search(r"немає|out of stock|недоступ", data.get("stockText", ""), re.I) else "in stock"
     return {
         "id": "set-tyzhnya" if weekly else pixel_id(data),
-        "title": clean_title(data.get("title") or ""),
-        "description": extract_description(data.get("infoText")) or clean(data.get("ogDescription")),
+        "title": clean_title(dl_item(data).get("item_name") or data.get("h1") or ""),
+        "description": build_description(data) or clean(data.get("ogDescription")),
         "availability": av,
         "condition": "new",
         "price": money(price),
