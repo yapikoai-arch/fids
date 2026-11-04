@@ -72,9 +72,22 @@ def money(v):
     return f"{float(v):.2f} UAH"
 
 
+def url_ok(url):
+    try:
+        req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return r.status == 200 and r.headers.get("Content-Type", "").startswith("image/")
+    except Exception:  # noqa: BLE001
+        return False
+
+
 def original_image(url):
-    """Прибирає /cache/<hash>/ з адреси фото Magento, щоб отримати оригінал."""
-    return re.sub(r"/media/catalog/product/cache/[0-9a-f]+/", "/media/catalog/product/", url or "")
+    """Оригінал фото без /cache/<hash>/; якщо він не відкривається — фото з картки як є."""
+    orig = re.sub(r"/media/catalog/product/cache/[0-9a-f]+/", "/media/catalog/product/", url or "")
+    if orig != url and not url_ok(orig):
+        print(f"  ! оригінал фото недоступний, беру з картки: {url}")
+        return url
+    return orig
 
 
 def google_feed(city):
