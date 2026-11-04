@@ -37,7 +37,6 @@ FEEDS = {
     "sety": [
         (WEEKLY, "Сети"),
         ("set-haruko", "Сети"),
-        ("pica-kurka-gribi-ta-bekon", "Піца"),
         ("set-shinobu", "Сети"),
         ("mini-set", "Сети"),
         ("set-5-filadel-fij", "Сети"),
