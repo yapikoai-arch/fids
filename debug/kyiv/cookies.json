@@ -1,0 +1,452 @@
+[
+ {
+  "name": "mage-cache-storage",
+  "value": "{}",
+  "domain": "yapiko.ua",
+  "path": "/ua/kyiv",
+  "expires": -1,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "PHPSESSID",
+  "value": "o1kgcfchbho47dbqnoae5978om",
+  "domain": ".yapiko.ua",
+  "path": "/",
+  "expires": 1809348055.729617,
+  "httpOnly": true,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "private_content_version",
+  "value": "updated-6aeb27d429ed14.49005028",
+  "domain": "yapiko.ua",
+  "path": "/",
+  "expires": 1825332052.616766,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "_ttp",
+  "value": "3Ldu1g279ImXeMSCDjAkRfaO2UC.1793796052916",
+  "domain": ".tiktok.com",
+  "path": "/",
+  "expires": 1827492052.958406,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "CLID",
+  "value": "9d734b9a0e274efaa6bffbfbe9a609e5.20261104.20271104",
+  "domain": "www.clarity.ms",
+  "path": "/",
+  "expires": 1825332053.013912,
+  "httpOnly": true,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "sbjs_migrations",
+  "value": "1418474375998%3D1",
+  "domain": ".yapiko.ua",
+  "path": "/",
+  "expires": 1809348053,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "sbjs_current_add",
+  "value": "fd%3D2026-11-04%2012%3A40%3A53%7C%7C%7Cep%3Dhttps%3A%2F%2Fyapiko.ua%2Fua%2Fkyiv%2F%7C%7C%7Crf%3D%28none%29",
+  "domain": ".yapiko.ua",
+  "path": "/",
+  "expires": 1809348053,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "sbjs_first_add",
+  "value": "fd%3D2026-11-04%2012%3A40%3A53%7C%7C%7Cep%3Dhttps%3A%2F%2Fyapiko.ua%2Fua%2Fkyiv%2F%7C%7C%7Crf%3D%28none%29",
+  "domain": ".yapiko.ua",
+  "path": "/",
+  "expires": 1809348053,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "sbjs_current",
+  "value": "typ%3Dtypein%7C%7C%7Csrc%3D%28direct%29%7C%7C%7Cmdm%3D%28none%29%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29",
+  "domain": ".yapiko.ua",
+  "path": "/",
+  "expires": 1809348053,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "sbjs_first",
+  "value": "typ%3Dtypein%7C%7C%7Csrc%3D%28direct%29%7C%7C%7Cmdm%3D%28none%29%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29",
+  "domain": ".yapiko.ua",
+  "path": "/",
+  "expires": 1809348053,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "sbjs_udata",
+  "value": "vst%3D1%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome%2F129.0.6668.29%20Safari%2F537.36",
+  "domain": ".yapiko.ua",
+  "path": "/",
+  "expires": 1809348053,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "sbjs_session",
+  "value": "pgs%3D1%7C%7C%7Ccpg%3Dhttps%3A%2F%2Fyapiko.ua%2Fua%2Fkyiv%2F",
+  "domain": ".yapiko.ua",
+  "path": "/",
+  "expires": 1793797853,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "cf_clearance",
+  "value": "Civ8c4_f6QVHCJWqtHOhvZtGNYiK6AvQQHRYyKcrOGjCUtk_yFloPWA5mgSFGUjroQmZbKpw1xAZZ9CGq9am6U1_n5JS_6AkVP2C_QrBfzqosA-oEghWXp3rfkoOvfxclAwR_5MR4h2jlyBrVEKdorZ4iUv_k5MApi6NzdNWh86klP__aMW65kk5tlr7i9L5POmaWShj753yWnkxhqU9rXQVODQqauY9ncHJSvY2EaQxpEk9oIuZXDQSX5u0D-aOQXtxbtgPDEcbOEpXKJBb0y81KtF0-AAT2XHY9a9kUf6TyDfDvo0XXwCx1SIZpCI2BVeOwP9r2Dfm9l8FNiDQWihdffwMvVYQLwU0II7yUuUlwjGdlZRRwr3fpdbnHp8ZzxAtSt3EhhRqKEuozzySMxNMPeyjlt5nUCs1GabCpVo9SHXjT1bBOo8D5WF8BTcVssqsrYpe-Yt6p4cTvkCnypWrpNOn6Y6EBx9F8Didelg",
+  "domain": ".yapiko.ua",
+  "path": "/",
+  "expires": 1825332053.219665,
+  "httpOnly": true,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "_tt_enable_cookie",
+  "value": "1",
+  "domain": ".yapiko.ua",
+  "path": "/",
+  "expires": 1827492053,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "_ttp",
+  "value": "01M6K9769TTZ5QFXF4RGH1N28T_.tt.1.1793796053306",
+  "domain": ".yapiko.ua",
+  "path": "/",
+  "expires": 1827492053,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "_clck",
+  "value": "4z9bzt%5E2%5Egav%5E0%5E2499",
+  "domain": ".yapiko.ua",
+  "path": "/",
+  "expires": 1825332053,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "_fbp",
+  "value": "fb.1.1793796053429.624507743286052872",
+  "domain": ".yapiko.ua",
+  "path": "/",
+  "expires": 1801572053,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "ttcsid_D250E8JC77UAU6J6GLMG",
+  "value": "1793796053311::GSd6E46JT5nHkVVYaxRo.1.1793796053542.0",
+  "domain": ".yapiko.ua",
+  "path": "/",
+  "expires": 1827492053,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "_clsk",
+  "value": "b7kieb%5E1793796053704%5E1%5E1%5Eu.clarity.ms%2Fcollect",
+  "domain": ".yapiko.ua",
+  "path": "/",
+  "expires": 1793882453,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "MUID",
+  "value": "1BEE8481CC17690F38D59C86CD686868",
+  "domain": ".bing.com",
+  "path": "/",
+  "expires": 1827492054.09257,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "MR",
+  "value": "0",
+  "domain": ".c.bing.com",
+  "path": "/",
+  "expires": 1794400854.092661,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "SRM_B",
+  "value": "1BEE8481CC17690F38D59C86CD686868",
+  "domain": ".c.bing.com",
+  "path": "/",
+  "expires": 1827492054.092686,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "SM",
+  "value": "C",
+  "domain": ".c.clarity.ms",
+  "path": "/",
+  "expires": -1,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "MUID",
+  "value": "1BEE8481CC17690F38D59C86CD686868",
+  "domain": ".clarity.ms",
+  "path": "/",
+  "expires": 1827492054.208474,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "MR",
+  "value": "0",
+  "domain": ".c.clarity.ms",
+  "path": "/",
+  "expires": 1794400854.208516,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "ANONCHK",
+  "value": "0",
+  "domain": ".c.clarity.ms",
+  "path": "/",
+  "expires": 1793796654.208535,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "form_key",
+  "value": "C8ldAjPCECMEmoMJ",
+  "domain": "yapiko.ua",
+  "path": "/",
+  "expires": 1793882454,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "mage-cache-storage-section-invalidation",
+  "value": "{}",
+  "domain": "yapiko.ua",
+  "path": "/",
+  "expires": 1809348054,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "mage-cache-sessid",
+  "value": "true",
+  "domain": "yapiko.ua",
+  "path": "/",
+  "expires": 1809348054,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "mage-messages",
+  "value": "",
+  "domain": "yapiko.ua",
+  "path": "/",
+  "expires": 1809348054,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "Strict"
+ },
+ {
+  "name": "region",
+  "value": "kyiv",
+  "domain": "yapiko.ua",
+  "path": "/",
+  "expires": 1825332055,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "recently_viewed_product",
+  "value": "{}",
+  "domain": "yapiko.ua",
+  "path": "/",
+  "expires": 1809348054,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "recently_viewed_product_previous",
+  "value": "{}",
+  "domain": "yapiko.ua",
+  "path": "/",
+  "expires": 1809348054,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "recently_compared_product",
+  "value": "{}",
+  "domain": "yapiko.ua",
+  "path": "/",
+  "expires": 1809348054,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "recently_compared_product_previous",
+  "value": "{}",
+  "domain": "yapiko.ua",
+  "path": "/",
+  "expires": 1809348054,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "product_data_storage",
+  "value": "{}",
+  "domain": "yapiko.ua",
+  "path": "/",
+  "expires": 1809348054,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "form_key",
+  "value": "C8ldAjPCECMEmoMJ",
+  "domain": ".yapiko.ua",
+  "path": "/",
+  "expires": 1809348055.32328,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "mst_related_session_id",
+  "value": "17937960559733235",
+  "domain": "yapiko.ua",
+  "path": "/",
+  "expires": 1828356055.250422,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "section_data_ids",
+  "value": "{%22advanced-map-location%22:1793796054%2C%22google_ecommerce_data%22:1793796055%2C%22region%22:1793796055}",
+  "domain": "yapiko.ua",
+  "path": "/",
+  "expires": 1809348054,
+  "httpOnly": false,
+  "secure": true,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "_ga_PR135HB83V",
+  "value": "GS2.1.s1793796056$o1$g0$t1793796056$j60$l0$h0$dBIde2t79wE6XoMKnAzFdyCRPafA861n29A",
+  "domain": ".yapiko.ua",
+  "path": "/",
+  "expires": 1828356056.142513,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "_ga",
+  "value": "GA1.1.1697334879.1793796056",
+  "domain": ".yapiko.ua",
+  "path": "/",
+  "expires": 1828356056.142911,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "_gcl_au",
+  "value": "1.1.1536375081.1793796056.-.-.1793796056.1761939402.1793796056.1793796056",
+  "domain": ".yapiko.ua",
+  "path": "/",
+  "expires": 1801572056,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "IDE",
+  "value": "AHWqTUlwkNtNBfxLmCEXxxMF1cj-VJVQFCFwEELFhFJf74x-nRxvKkjL0polTP0a",
+  "domain": ".doubleclick.net",
+  "path": "/",
+  "expires": 1828356056.323205,
+  "httpOnly": true,
+  "secure": true,
+  "sameSite": "None"
+ },
+ {
+  "name": "ttcsid",
+  "value": "1793796053311::4Ffdq9d5KYkGt2eRNrNZ.1.1793796053542.0::1.-1324.0::3953.2.729.134::0.0.0",
+  "domain": ".yapiko.ua",
+  "path": "/",
+  "expires": 1827492057,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ },
+ {
+  "name": "biatv-cookie",
+  "value": "{%22firstVisitAt%22:1793796056%2C%22visitsCount%22:1%2C%22currentVisitStartedAt%22:1793796056%2C%22currentVisitLandingPage%22:%22https://yapiko.ua/ua/kyiv/%22%2C%22currentVisitUpdatedAt%22:1793796056%2C%22currentVisitOpenPages%22:1%2C%22campaignTime%22:1793796056%2C%22campaignCount%22:1%2C%22utmDataCurrent%22:{%22utm_source%22:%22(direct)%22%2C%22utm_medium%22:%22(none)%22%2C%22utm_campaign%22:%22(direct)%22%2C%22utm_content%22:%22(not%20set)%22%2C%22utm_term%22:%22(not%20set)%22%2C%22beginning_at%22:1793796056}%2C%22utmDataFirst%22:{%22utm_source%22:%22(direct)%22%2C%22utm_medium%22:%22(none)%22%2C%22utm_campaign%22:%22(direct)%22%2C%22utm_content%22:%22(not%20set)%22%2C%22utm_term%22:%22(not%20set)%22%2C%22beginning_at%22:1793796056}}",
+  "domain": "yapiko.ua",
+  "path": "/",
+  "expires": 1828356057.434897,
+  "httpOnly": false,
+  "secure": false,
+  "sameSite": "Lax"
+ }
+]
