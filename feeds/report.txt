@@ -1,5 +1,5 @@
 harkiv   sety    set-tyzhnya  Сет Тижня                            879.00 UAH   729.00 UAH  in stock     ✓ Google
-harkiv   sety           1929  Сет Харуко                           669.00 UAH               out of stock ✓ Google
+harkiv   sety           1929  Сет Харуко                           669.00 UAH               in stock     ✓ Google
 harkiv   sety           1930  Сет Шінобу                           879.00 UAH               in stock     ✓ Google
 harkiv   sety             53  Міні сет                             559.00 UAH               in stock     ✓ Google
 harkiv   sety           1196  Сет 5 Філадельфій                   1099.00 UAH               in stock     ✓ Google
