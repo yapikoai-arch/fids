@@ -1,40 +1,40 @@
 harkiv   sety    set-tyzhnya  Сет Тижня                            879.00 UAH   729.00 UAH  in stock     ✓ Google
-harkiv   sety           1929  Сет Харуко                           669.00 UAH               in stock     ✓ Google
-harkiv   sety           1930  Сет Шінобу                           879.00 UAH               in stock     ✓ Google
-harkiv   sety             53  Міні сет                             559.00 UAH               in stock     ✓ Google
-harkiv   sety           1196  Сет 5 Філадельфій                   1099.00 UAH               in stock     ✓ Google
+harkiv   sety           1929  Сет Харуко                           685.00 UAH               in stock     ✓ Google
+harkiv   sety           1930  Сет Шінобу                           899.00 UAH               in stock     ✓ Google
+harkiv   sety             53  Міні сет                             579.00 UAH               in stock     ✓ Google
+harkiv   sety           1196  Сет 5 Філадельфій                   1119.00 UAH               in stock     ✓ Google
 harkiv   asorti  set-tyzhnya  Сет Тижня                            879.00 UAH   729.00 UAH  in stock     ✓ Google
 harkiv   asorti         1797  Піца з куркою, грибами та беконом    299.00 UAH               in stock     
 harkiv   asorti          523  Суп том-ям                           289.00 UAH               in stock     ✓ Google
 harkiv   asorti         1366  Суші бургер з креветкою              319.00 UAH               in stock     ✓ Google
-harkiv   asorti         1553  Party-комбо Супер мікс               839.00 UAH   739.00 UAH  in stock     ✓ Google
+harkiv   asorti         1553  Party-комбо Супер мікс               859.00 UAH   759.00 UAH  in stock     ✓ Google
 kyiv     sety    set-tyzhnya  Сет Тижня                            909.00 UAH   759.00 UAH  in stock     ✓ Google
-kyiv     sety           1929  Сет Харуко                           689.00 UAH               in stock     ✓ Google
-kyiv     sety           1930  Сет Шінобу                           939.00 UAH               in stock     ✓ Google
-kyiv     sety             53  Міні сет                             599.00 UAH               in stock     ✓ Google
-kyiv     sety           1196  Сет 5 Філадельфій                   1229.00 UAH               in stock     ✓ Google
+kyiv     sety           1929  Сет Харуко                           709.00 UAH               in stock     ✓ Google
+kyiv     sety           1930  Сет Шінобу                           959.00 UAH               in stock     ✓ Google
+kyiv     sety             53  Міні сет                             609.00 UAH               in stock     ✓ Google
+kyiv     sety           1196  Сет 5 Філадельфій                   1259.00 UAH               in stock     ✓ Google
 kyiv     asorti  set-tyzhnya  Сет Тижня                            909.00 UAH   759.00 UAH  in stock     ✓ Google
 kyiv     asorti         1797  Піца з куркою, грибами та беконом    319.00 UAH               in stock     
 kyiv     asorti          523  Суп том-ям                           309.00 UAH               in stock     ✓ Google
 kyiv     asorti         1366  Суші бургер з креветкою              319.00 UAH               in stock     ✓ Google
-kyiv     asorti         1553  Party-комбо Супер мікс               879.00 UAH   779.00 UAH  in stock     ✓ Google
+kyiv     asorti         1553  Party-комбо Супер мікс               899.00 UAH   799.00 UAH  in stock     ✓ Google
 odesa    sety    set-tyzhnya  Сет Тижня                            909.00 UAH   759.00 UAH  in stock     ✓ Google
-odesa    sety           1929  Сет Харуко                           689.00 UAH               in stock     ✓ Google
-odesa    sety           1930  Сет Шінобу                           939.00 UAH               in stock     ✓ Google
-odesa    sety             53  Міні сет                             599.00 UAH               in stock     ✓ Google
-odesa    sety           1196  Сет 5 Філадельфій                   1229.00 UAH               in stock     ✓ Google
+odesa    sety           1929  Сет Харуко                           709.00 UAH               in stock     ✓ Google
+odesa    sety           1930  Сет Шінобу                           959.00 UAH               in stock     ✓ Google
+odesa    sety             53  Міні сет                             609.00 UAH               in stock     ✓ Google
+odesa    sety           1196  Сет 5 Філадельфій                   1259.00 UAH               in stock     ✓ Google
 odesa    asorti  set-tyzhnya  Сет Тижня                            909.00 UAH   759.00 UAH  in stock     ✓ Google
 odesa    asorti         1797  Піца з куркою, грибами та беконом    319.00 UAH               in stock     
 odesa    asorti          523  Суп том-ям                           309.00 UAH               in stock     ✓ Google
 odesa    asorti         1366  Суші бургер з креветкою              319.00 UAH               in stock     ✓ Google
-odesa    asorti         1553  Party-комбо Супер мікс               879.00 UAH   779.00 UAH  in stock     ✓ Google
+odesa    asorti         1553  Party-комбо Супер мікс               859.00 UAH   799.00 UAH  in stock     ✓ Google
 poltava  sety    set-tyzhnya  Сет Тижня                            879.00 UAH   729.00 UAH  in stock     ✓ Google
-poltava  sety           1929  Сет Харуко                           669.00 UAH               in stock     ✓ Google
-poltava  sety           1930  Сет Шінобу                           879.00 UAH               in stock     ✓ Google
-poltava  sety             53  Міні сет                             539.00 UAH               in stock     ✓ Google
-poltava  sety           1196  Сет 5 Філадельфій                   1099.00 UAH               in stock     ✓ Google
+poltava  sety           1929  Сет Харуко                           685.00 UAH               in stock     ✓ Google
+poltava  sety           1930  Сет Шінобу                           899.00 UAH               in stock     ✓ Google
+poltava  sety             53  Міні сет                             579.00 UAH               in stock     ✓ Google
+poltava  sety           1196  Сет 5 Філадельфій                   1119.00 UAH               in stock     ✓ Google
 poltava  asorti  set-tyzhnya  Сет Тижня                            879.00 UAH   729.00 UAH  in stock     ✓ Google
 poltava  asorti         1797  Піца з куркою, грибами та беконом    299.00 UAH               in stock     
 poltava  asorti          523  Суп том-ям                           289.00 UAH               in stock     ✓ Google
 poltava  asorti         1366  Суші бургер з креветкою              319.00 UAH               in stock     ✓ Google
-poltava  asorti         1553  Party-комбо Супер мікс               839.00 UAH   739.00 UAH  in stock     ✓ Google
+poltava  asorti         1553  Party-комбо Супер мікс               859.00 UAH   759.00 UAH  in stock     ✓ Google
